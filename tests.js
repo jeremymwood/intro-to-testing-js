@@ -16,6 +16,6 @@ describe('helloWorld', function() {
 
 describe(`sayHello`, function() {
     it(`should return say Hello`, function() {
-        expect(typeof sayHello).toBe(`function`);
+        expect(typeof helloWorld).toBe(`function`);
     });
 });
