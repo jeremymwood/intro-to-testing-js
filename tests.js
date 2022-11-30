@@ -14,4 +14,8 @@ describe('helloWorld', function() {
     });
 });
 
-//test
+describe(`sayHello`, function() {
+    it(`should return say Hello`, function() {
+        expect(typeof sayHello).toBe(`function`);
+    });
+});
