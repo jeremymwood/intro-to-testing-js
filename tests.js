@@ -15,7 +15,11 @@ describe('helloWorld', function() {
 });
 
 describe(`sayHello`, function() {
-    it(`should return say Hello`, function() {
-        expect(typeof helloWorld).toBe(`function`);
+    it("should return `Hello`", function() {
+        expect(typeof sayHello).toBe(`function`);
+    });
+    it(`should return a string when called.`, function() {
+        expect(typeof sayHello()).toBe(`string`);
     });
 });
+
