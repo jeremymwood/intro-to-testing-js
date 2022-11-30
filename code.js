@@ -5,5 +5,9 @@ function helloWorld() {
 
 // sayHello function
 function sayHello(name) {
+    if(typeof name === `boolean`) {
+        return `Hello, World!`
+    } else {
         return `Hello, ` + name + `!`;
+    }
 }
