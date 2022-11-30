@@ -40,3 +40,20 @@ describe(`sayHello`, function() {
         expect(sayHello(false)).toBe("Hello, World!");
     });
 });
+
+describe( `isFive`, function (){
+    it('should return true when called', function () {
+        expect(typeof isFive).toBe(`function`)
+    });
+    it('should return a boolean no matter the input', function () {
+        expect(typeof isFive()).toBe(`boolean`)
+    });
+    it('should return true what passed string `5`', function () {
+        expect(isFive(`5`)).toBe(true)
+    });
+    it('should return true what passed number 5', function () {
+        expect(isFive(5)).toBe(true)
+    });
+})
+
+//                                                                                    If so, write the test, ensure that the test is failing, and then write the implementation
