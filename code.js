@@ -28,19 +28,13 @@ function isVowel(input) {
      }
 }
 
-// let isVowel = function(letter) {
-//
-//     var vowels = ["a", "e", "i", "o", "u"];
-//
-//     for(var i in vowels){
-//
-//         if(letter === i){
-//             return true;
-//         } else {
-//             return false;
-//         }
-//     }
-//
-// };
+function add(x , y) {
+    if((isNaN(x) === true) || (isNaN(y) === true)) {
+        return NaN;
+    } else {
+        return parseInt(x) + parseInt(y);
+    }
+}
 
-console.log(isVowel(`a`));
+console.log(add(`banana`,`split`));
+console.log(typeof (`NaN`,4));

@@ -92,7 +92,7 @@ describe( `isEven`, function (){
     });
 })
 
-let describe1 = describe( `isVowel`, function (){
+describe( `isVowel`, function (){
     it('should return a boolean no matter the input', function () {
         expect(typeof isVowel()).toBe(`boolean`)
     });
@@ -121,3 +121,34 @@ let describe1 = describe( `isVowel`, function (){
         expect(isVowel(``)).toBe(false)
     });
 })
+
+describe( `add`, function (){
+    it('should return a boolean no matter the input', function () {
+        expect(typeof parseInt(add)).toBe(`number`)
+    });
+    it('should return 5 for 2 + 3', function () {
+        expect(add(2,3)).toBe(5)
+    });
+    it('should return -12 for -3 + -9', function () {
+        expect(add(-3,-9)).toBe(-12)
+    });
+    it('should return 11 for `5` + 6', function () {
+        expect(add(`5`,6)).toBe(11)
+    });
+    it('should return 11 for `-4` + `10`', function () {
+        expect(add(`-4`,`10`)).toBe(6)
+    });
+    it('should return `NaN` for `banana` + `split`', function () {
+        expect(typeof add(`banana`,`split`)).toBe(`NaN`)
+    });
+    it('should return `NaN` for 2 + apples', function () {
+        expect(typeof add(2,`apples`)).toBe(`NaN`)
+    });
+    it('should return `NaN` for ()', function () {
+        expect(typeof add()).toBe(NaN)
+    });
+})
+
+// add("banana", "split") returns NaN
+// add(2, "apples") returns NaN
+// add() returns NaN
